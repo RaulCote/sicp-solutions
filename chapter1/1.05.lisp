@@ -8,5 +8,6 @@
 ; entering in an infinite loop as it can't resolves the value.
 ; 
 ; Normal order evaluation
-; the if statement (the predicate) resolves to true so 0, p never gets
-; evaluated.
+; The predicate evaluates to true, so the interpreter gets to evaluate the 
+; the consequent simply returning 0. The interpreter never gets into evaluate
+; the alternative (p).
