@@ -29,7 +29,7 @@
 (define (square x) (* x x))
 
 (define (good-enough? previous-guess guess)
-  (< (abs (/ (- guess previous-guess guess)) 0.00000000001))
+  (< (abs (/ (- guess previous-guess guess)) 0.00000000001)))
 
 (define (sqrt-iter guess x)
   (if (good-enough? guess (improve guess x))
